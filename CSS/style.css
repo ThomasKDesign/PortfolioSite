@@ -3,31 +3,30 @@
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-
 ::-moz-selection {
-    background: #f2c2c9;
-    color: #a4003a;
-    text-shadow: none;
+	background: #f2c2c9;
+	color: #a4003a;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #16a085;
-    color: #a4003a;
-    text-shadow: none;
+	background: #16a085;
+	color: #a4003a;
+	text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 .centered {
@@ -42,108 +41,130 @@
 	margin-bottom: 80px;
 }
 
+
 /* ==========================================================================
    General styles
    ========================================================================== */
 
-
 body {
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
 }
 
-h1 {
-	font-family: 'Permanent Marker';
-	font-size: 36;
-	font-weight: 700;
-	color: #18ABAB;
-	text-shadow: -3px 3px #FF8724;
+h5 {
+	float: left;
+	padding-left: 40px;
+	color: #399F5F;
 }
 
-
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h6 {
 	font-weight: 900;
-    color: #18ABAB;
+	color: #399F5F;
 }
-
 
 .navbar-brand {
 	font-weight: 700;
 }
 
 .navbar-default .navbar-brand {
-	color: #18ABAB;
+	color: #399F5F;
+	text-shadow: 0 0 2px black;
 }
 
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
+	text-shadow: 0 0 3px black;
 }
 
-.navbar-default .navbar-nav > a, .navbar-default .navbar-nav > a:hover, .navbar-default .navbar-nav > a:focus {
-	color: #18ABAB;
+.navbar-default .navbar-nav> .active> a,
+.navbar-default .navbar-nav> .active> a:hover,
+.navbar-default .navbar-nav> .active> a:focus {
+	color: #399F5F;
 	background-color: transparent;
-	border-bottom: 2px solid #FF8724
 }
 
-.navbar-default .navbar-nav > li > a {
-	color: #18ABAB;
+.navbar-default .navbar-nav> li> a {
+	color: #399F5F;
 }
+
 
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/seattle-Blended_Dark.jpg) no-repeat center top;
-	margin-top: -70px;
+	background: url(../img/Seattle_backalley_street_DARK.jpg) no-repeat center top;
 	padding-top: 250px;
-	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-#headerwrap h2 {
-	color:#ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
+#headerwrap p {
+	float: left;
+	margin-left: 100px;
+	padding-left: 100px;
+	background: transparent;
+}
+
+h1 {
+	font-family: Arvo;
+	margin-left: 50px;
+	font-size: 50;
+	font-weight: 700;
+	color: #399F5F;
+	text-shadow: -3px 3px black;
 }
 
 #headerwrap h4 {
 	font-weight: 400;
-	color: #ffffff
+	margin-left: 50px;
+	color: white;
+	text-shadow: -2px 2px black;
 }
 
 #Aboutwrap {
 	padding: 25px;
-	background-color: #FF8724;
+	background-color: white;
 }
 
-#AboutMe >h2, >h4 {
-	color: white;
-	
+/*#Portfolio {
+	visibility: hidden;
+}
+
+/*#AboutMe{
+  width:100%;
+  height:400px;
+  background: white;
+  color:white;
+  font-size:150%;
+}*/
+
+
+/*  About Me list hover effects  */
+
+.About ul {
+	list-style-type: none;
 }
 
 
+/*  Social list hover effects  */
 
 #social {
 	padding-top: 50px;
@@ -153,11 +174,11 @@ h2, h3, h4, h5, h6 {
 
 #social i {
 	font-size: 40px;
-	color: #4a4a4a
+	color: #4a4a4a;
 }
 
 #social i:hover {
-	color: #1abc9c
+	color: #399F5F;
 }
 
 #footerwrap {
@@ -166,7 +187,7 @@ h2, h3, h4, h5, h6 {
 	background-color: #2f2f2f;
 }
 
-#footerwrap  {
+#footerwrap {
 	color: #f2f2f2;
 	margin-left: 10px;
 }
@@ -175,29 +196,33 @@ h2, h3, h4, h5, h6 {
 	position: center center;
 }
 
-#workwrap {	
-	background: url(../img/seatte-420319_1920.png) no-repeat center top;
-	margin-top: -70px;
+.footerInfo text {
+	color: white;
+}
+
+.footerInfo text:hover{
+	
+}
+
+#workwrap {
+	background: url(../img/Portrait-with-OrangeBG-650x975.png) no-repeat center top;
 	padding-top: 250px;
-	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #workwrap h1 {
-	color:#ffffff;
+	color: #ffffff;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
@@ -210,31 +235,28 @@ h2, h3, h4, h5, h6 {
 	color: #ffffff
 }
 
-#aboutwrap {	
+#aboutwrap {
 	background: url(../img/about.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
-	text-align:center;
+	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 550px;
 	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
-
-
 /* Gallery */
+
 .gallery {
 	margin-top: 30px;
 }
@@ -243,11 +265,3 @@ h2, h3, h4, h5, h6 {
 	opacity: 0.3;
 	color: #18ABAB;
 }
-
-
-
-
-
-
-
-
