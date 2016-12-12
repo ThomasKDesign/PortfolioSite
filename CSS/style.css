@@ -47,9 +47,9 @@ hr {
    ========================================================================== */
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
+	
+	font-weight: 600;
+	font-size: 170%;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 }
@@ -61,7 +61,6 @@ h5 {
 }
 
 h2,
-h3,
 h4,
 h6 {
 	font-weight: 900;
@@ -88,10 +87,12 @@ h6 {
 .navbar-default .navbar-nav> .active> a:focus {
 	color: #399F5F;
 	background-color: transparent;
+	
 }
 
 .navbar-default .navbar-nav> li> a {
 	color: #399F5F;
+	border-bottom-color: #399F5F;
 }
 
 
@@ -116,26 +117,20 @@ h6 {
 	background-size: cover;
 }
 
-#headerwrap p {
-	float: left;
-	margin-left: 100px;
-	padding-left: 100px;
-	background: transparent;
-}
-
 h1 {
-	font-family: Arvo;
-	margin-left: 50px;
-	font-size: 50;
-	font-weight: 700;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 70px;
+	
+	font-weight: 650px;
 	color: #399F5F;
-	text-shadow: -3px 3px black;
+	text-shadow: 4px 4px black;
 }
 
 #headerwrap h4 {
-	font-weight: 400;
-	margin-left: 50px;
+	text-align: center;
 	color: white;
+	font-weight: 500;
 	text-shadow: -2px 2px black;
 }
 
@@ -174,20 +169,19 @@ h1 {
 
 #social i {
 	font-size: 40px;
+	color: #399F5F;
+}
+
+#social i :hover {
+	
 	color: #4a4a4a;
 }
 
-#social i:hover {
-	color: #399F5F;
-}
 
 #footerwrap {
 	padding-top: 70px;
 	padding-bottom: 50px;
 	background-color: #2f2f2f;
-}
-
-#footerwrap {
 	color: #f2f2f2;
 	margin-left: 10px;
 }
@@ -196,12 +190,12 @@ h1 {
 	position: center center;
 }
 
-.footerInfo text {
+.footerInfo a {
 	color: white;
 }
 
-.footerInfo text:hover{
-	
+#footerBrand {
+	text-emphasis-color: 399F5F;
 }
 
 #workwrap {
