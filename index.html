@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio">
     <meta name="author" content="Thomas Kaiaua">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="Fontawesome/ico/favicon.ico">
 		
 		<!-- Custom Cursive Font -->
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		
 		<title>Thomas Kaiaua Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="CSS/bootstrap.css" rel="stylesheet">
 		
 		<!-- Custom CSS animations stylesheet -->
-		<head>
+		
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-		</head>
-
-    <!-- Custom styles -->
+		
+		<!-- Custom styles -->
     <link href="Fontawesome/font-awesome.min.css" rel="stylesheet">
-		<link href="CSS/style.css" rel="stylesheet">
 		<link rel="stylesheet" href="CSS/animate.css">
+		
+		<!-- Main stylesheet -->
+		<link href="CSS/style.css" rel="stylesheet">
 		
 		<!-- DOM JQuery link  -->
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="/scroll.js"></script>
 		
-  </head>
+	  </head>
 
   <body>
 
     <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -47,9 +48,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#works">Works</a></li>
+            <li class="active"><a class="page-scroll" href="index.html">Home</a></li>
+            <li><a class="page-scroll" href="#Aboutwrap">About</a></li>
+            <li><a class="page-scroll" href="#Portfolio">Works</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -66,42 +67,45 @@
 			</div> <!-- /title -->		
 
 	</div><!-- /headerwrap -->
-	
-		<!-- Ani.js Example  
-			<div id="main" data-anijs="if: mouseover, do: swing animated">
-  	      Main (MouseOver)
-  	  </div>    
-		-->
-	
-		<!-- About -->	
+
+	<!-- About -->	
 	<div class="About" id="Aboutwrap">	
-	 <section id="About"></section>
-	 <div class="container text-centered">
-		 <h2>About Me</h2> 
-		 <p>Having worked in the graphic design and printing industry for over fifteen years, making a leap into web development only seems a natural next phase in my career. Becoming a part of a fast, ever-changing industry is not only exciting, but has allowed me to utilize my creative skills and experience I 
+	 <!--<section id="About"></section> -->
+	  <div class="container text-centered">
+		 <h2>About Me</h2>
+		 	<p>Having worked in the graphic design and printing industry for over fifteen years, making a leap into web development only seems a natural transition in my career. Becoming a part of a fast, ever-changing industry is not only exciting, but has allowed me to utilize my creative skills and experience I 
 		acquired academically and professionally.
-		</p>
-		 	 <h4 class="animated bounce">What I'm Proficient In</h4>
-	  <ul class ="About" id="AboutMe" data-anijs="if: mouseover, do: pulse animated">
-			<li>HTML5</li>
-			<li>CSS3</li>
-  		<li>Adobe Illustrator & Photoshop</li> 
-			<li>Corel Draw </li> 
-			<li>Inskcape </li> 
-		</ul>
+			</p>
+		  <p> Having recently finished a Web Development Certificate program at Seattle University, I specialize in front-end development and web design. I am passionate about creating clean, minimal, and dynamic UIs, web pages and applications. And committed to learning new web technologies and best practices.</p>
+		  <p>I'm currently looking for employment opportunities in a junior capacity, looking to utilize my skills and experience. Feel free to contact me! <a href="mailto:thomas.kaiaua@gmail.com?Subject=Hello%20again" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+		 </div>	
+	</div><!--/.About div -->		
 		
-	  <h4 class="animated bounce">What I'm Familiar With</h4>
-			<ul class ="About" id="AboutMe" data-anijs="if: mouseover, do: pulse animated">
-  		<li>JavaScript</li>
-  		<li>JQuery</li> 
-  		<li>AngularJS</li> 
-			<li>SASS</li> 
-			<li>WordPress</li>
-		 </ul>
-	  
-	
-	 </div>
-	</div><!--/.About div -->	
+	<div class="container" id="skillsWrap">	
+		<div class="container text-centered" id="skills">
+	 		
+		
+			
+			 		<h2>Skills and Technologies</h2> 
+		 	 		<h4 class=>What I'm Proficient In</h4>
+	    			<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+  					<li>Adobe Illustrator & Photoshop</li> 
+						<li>Corel Draw </li> 
+						<li>Inskcape </li> 
+	  				</ul>
+		
+	  			<h4>What I'm Familiar With</h4>
+						<ul>
+  					<li>JavaScript</li>
+  					<li>JQuery</li> 
+  					<li>AngularJS</li> 
+						<li>SASS</li> 
+						<li>WordPress</li>
+		 			</ul>
+		</div>
+	</div> <!-- #skills -->
 	
 	<!-- Ani.js Example
 		    <header data-anijs="if: click, do: flipInY animated">
@@ -120,7 +124,7 @@
 
 -->
 	
-	<section id="works"></section>
+	<!--<section id="works"></section> -->
 	<div class="container" id="Portfolio" data-anijs="scroll, on: window, do: scrollReveal">
 		<div class="row centered mt mb">
 			<h2>My Portfolio</h2>
@@ -148,35 +152,27 @@
 	</div><!--/container -->
 	
 	<div id="social">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-3">
-					<a href="https://www.github.com/"><i class="fa fa-github"></i></a>
-				</div>
-				<div class="col-lg-3">
-					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-				</div>
-				<div class="col-lg-3">
-					<a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
-				</div>
-				<div class="col-lg-3">
-					<a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
-				</div>
-
-				</div>
+		<div class="container-fluid text-centered">
+			<ul>
+				<li><a href="https://www.github.com/"><i class="fa fa-github wow bounceIn"></i></a></li>
+				
+				<li><a href="https://www.facebook.com/"><i class="fa fa-facebook wow bounceIn"></i></a></li>
 			
-			</div><!--/row -->
+				<li><a href="https://www.twitter.com/"><i class="fa fa-twitter wow bounceIn"></i></a></li>
+			
+				<li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest wow bounceIn"></i></a></li>
+			</ul>
 		</div><!--/container -->
 	</div><!--/social -->
 
 	<div id="footerwrap">
 		<div class="container text-center">
 
-		 <div class="footerInfo">
+		 	<div class="footerInfo">
 					<p><a href="mailto:thomas.kaiaua@gmail.com?Subject=Hello%20again" target="_top">Contact me for further information</a>
 					
 						
-			 		<p>&copy;Thomas Kaiaua</p> 
+			 		<p>&copy; Thomas Kaiaua</p> 
 			</div>
 		</div>
 	</div><!--/footerwrap -->
@@ -187,12 +183,17 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 		  <!-- AniJS core library -->
-  <script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script> 
 
-			<!-- Main DOM script -->
-		<script src="DOM.js/scroll.js"></script>
+			<!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+		<!-- Main DOM script -->
+		<script src="DOM.js/mainDOM.js"></script>
 
   		<!-- Include to use $addClass, $toggleClass or $removeClass -->
   <script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
