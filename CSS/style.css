@@ -173,7 +173,7 @@ hr {
 
 #skills h2, h4 {
 	color: white;
-	text-shadow: -2px 2px black;
+	text-shadow: 0 3px 5px rgba(0, 0, 0, .125);
 }
 
 #skills ul li {
