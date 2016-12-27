@@ -174,6 +174,7 @@ hr {
 #skills h2, h4 {
 	color: white;
 	text-shadow: 0 3px 5px rgba(0, 0, 0, .125);
+	font-weight: none;
 }
 
 #skills ul li {
@@ -225,11 +226,11 @@ hr {
 	color: white;
 }
 
-#footerBrand {
-	text-emphasis-color: 399F5F;
+.footerInfo p.footerBrand {
+	color: 399F5F;
 }
 
-#workwrap {
+/*#workwrap {
 	background: url(../img/Portrait-with-OrangeBG-650x975.png) no-repeat center top;
 	padding-top: 250px;
 	background-attachment: relative;
@@ -258,7 +259,7 @@ hr {
 #workwrap h4 {
 	font-weight: 400;
 	color: #ffffff
-}
+} */
 
 #aboutwrap {
 	background: url(../img/about.jpg) no-repeat center top;
