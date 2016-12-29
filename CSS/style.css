@@ -80,7 +80,7 @@ h6 {
 .navbar-default .navbar-nav a:hover {
 	
 	text-decoration: underline;
-	background: transparent;
+	background: none;
 }
 .navbar-default .navbar-nav> li> a {
 	color: #399F5F;
@@ -151,7 +151,7 @@ hr {
 
 #skillsWrap {
 	background: url(../img/HeadShot_BrickWallBG_bNw.png) no-repeat;
-	padding-top: 5px;
+	padding: 0 auto;
 	margin: none;
 	background-position: absolute;
 	min-height: 500px;
@@ -166,10 +166,12 @@ hr {
 	background-size: cover;
 }
 
-#skills{
-	margin: 30px, 50px, 0, 0;
-	direction: rtl;	
-}
+#skills {
+	padding-top: 30px;
+	margin: 100px, 0, 0, 0;
+	width: 300px;
+	float: right;
+	}
 
 #skills h2, h4 {
 	color: white;
@@ -226,7 +228,7 @@ hr {
 	color: white;
 }
 
-.footerInfo p.footerBrand {
+p.footerBrand {
 	color: 399F5F;
 }
 
@@ -259,7 +261,7 @@ hr {
 #workwrap h4 {
 	font-weight: 400;
 	color: #ffffff
-} */
+} 
 
 #aboutwrap {
 	background: url(../img/about.jpg) no-repeat center top;
@@ -278,7 +280,7 @@ hr {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
+} */
 
 
  /*Gallery */
