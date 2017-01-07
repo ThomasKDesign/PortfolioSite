@@ -2,35 +2,7 @@
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
 
-/* @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-::-moz-selection {
-	background: #f2c2c9;
-	color: #a4003a;
-	text-shadow: none;
-}
 
-::selection {
-	background: #16a085;
-	color: #a4003a;
-	text-shadow: none;
-}
-
-
-/*
- * A better looking default horizontal rule
- */
-
-.centered {
-	text-align: center
-}
-
-.mt {
-	margin-top: 80px;
-}
-
-.mb {
-	margin-bottom: 80px;
-}
 
 
 /*==========================================================================
@@ -134,7 +106,8 @@ hr {
 }
 
 #Aboutwrap {
-	font-weight: 450;
+	font-size: 110%;
+	font-weight: 300;
 	padding: 25px;
 	background-color: white;
 }
@@ -231,57 +204,6 @@ hr {
 p.footerBrand {
 	color: 399F5F;
 }
-
-/*#workwrap {
-	background: url(../img/Portrait-with-OrangeBG-650x975.png) no-repeat center top;
-	padding-top: 250px;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#workwrap h1 {
-	color: #ffffff;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	letter-spacing: 4px;
-	font-size: 80px;
-	font-weight: bold;
-}
-
-#workwrap h4 {
-	font-weight: 400;
-	color: #ffffff
-} 
-
-#aboutwrap {
-	background: url(../img/about.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align: center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 550px;
-	width: 100%;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-} */
-
 
  /*Gallery */
 
