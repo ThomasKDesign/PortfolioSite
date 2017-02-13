@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio">
     <meta name="author" content="Thomas Kaiaua">
-    <link rel="shortcut icon" href="Fontawesome/ico/favicon.ico">
+    <script src="https://use.fontawesome.com/7c217163e9.js"></script>
 		
 		<!-- Custom Cursive Font -->
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -17,8 +17,7 @@
     <link href="CSS/bootstrap.css" rel="stylesheet">
 		
 		<!-- Custom CSS animations stylesheet -->
-		
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		
 		<!-- Custom styles -->
     <link href="Fontawesome/font-awesome.min.css" rel="stylesheet">
@@ -69,14 +68,14 @@
 	</div><!-- /headerwrap -->
 
 	<!-- About -->	
-	<div class="About" id="Aboutwrap">	
-	  <div class="container text-centered">
+	<div class="About">	
+	  <div class="container text-centered"  id="Aboutwrap">
 		 	<center><h2>About Me</h2></center>
 		 	<p>Having worked in the graphic design and printing industry for over fifteen years, making a leap into web development only seems a natural transition in my career. 
 				 Becoming a part of a fast, ever-changing industry is not only exciting, but has allowed me to utilize my creative skills and experience I 
 				 acquired academically and professionally.
 			</p>
-		  <p>Having recently finished a Web Development Certificate program at Seattle University, I specialize in front-end development and web design. 
+		  <p>Just recently completed a Web Development program at Seattle University, and I specialize in front-end development and web design. 
 				 I am passionate about creating clean, minimal, and dynamic UIs, web pages and applications. And committed to learning new web technologies and best practices.</p>
 		  <p>I'm currently looking for employment opportunities in a junior capacity, looking to utilize my skills and experience. Feel free to contact me! 
 				 <a href="mailto:thomas.kaiaua@gmail.com?Subject=Hello!" target="_top"><i class="fa fa-envelope-o fa-2x wow bounceIn" data-wow-delay=".1s"></i></a>
@@ -106,44 +105,63 @@
 		</div>
 	</div> <!-- #skills -->
 	
-	<div class="container" id="Portfolio" data-anijs="scroll, on: window, do: scrollReveal">
+	<div class="container" id="Portfolio">
 		  <div class="row centered mt mb">
 			   <center><h2>My Portfolio</h2></center>
 			
 			   <div class="col-lg-4 col-md-4 col-sm-4 gallery" id="PortfolioImg">
 			   			<a href="http://thomaskdesign.github.io/wats1020-dom-basics/">
-								<img src="img/FortuneCookie_srcNEW.png" class="img-responsive"alt="Smiley face" height="300" width="600">
-					 		</a>
-			   </div>
+								<img src="img/Cookie_Gen_300x650.jpg" class="img-responsive"alt="Smiley face">
+					 		
+					 			<div class="caption-text">
+  						  	<span class="bottom">JavaScript DOM Basics</span>
+  							</div>
+							</a>	
+				 </div>
 			   <div class="col-lg-4 col-md-4 col-sm-4 gallery" id="PortfolioImg">
 			   			<a href="http://thomaskdesign.github.io/wats1010-product-page/">
 								<img src="img/OnlineProductStore_srcNEW.png" class="img-responsive"alt="Smiley face" height="300" width="650">
-					 		</a>
+					 			<div class="caption-text">
+  						  	<span class="bottom">HTML, CSS, JS, Bootstrap, JQuery project</span>
+  							</div>		
+					 </a>
 			   </div>
 			   <div class="col-lg-4 col-md-4 col-sm-4 gallery" id="PortfolioImg">
 			   			<a href="http://thomaskdesign.github.io/wats1020-dom-manipulation/">
 								<img src="img/DOM Manipulation_src.png" class="img-responsive">
-					 		</a>
+					 			<div class="caption-text">
+  						  <span class="bottom">JavaScript DOM Manipulation</span>
+  							</div>
+					 </a>
 			   </div>
 			   <div class="col-lg-4 col-md-4 col-sm-4 gallery" id="PortfolioImg">
 			   			<a href="http://thomaskdesign.github.io/wats1020-flickr-search/">
 								<img src="img/Flickr_wordmark_logo.png" class="img-responsive" height="300" width="650">
-					 		</a>
+					 			<div class="caption-text">
+  						  <span class="bottom">Flickr API/Image Search</span>
+  							</div>		
+					 </a>
 			   </div>
 			   <div class="col-lg-4 col-md-4 col-sm-4 gallery" id="PortfolioImg">
 			   			<a href="https://docs.google.com/drawings/d/1_ca5nJBdighurdJOJw5K_0VAdgAQA0vpK4E7AgmFbDs/edit?usp=sharing">
 								<img src="img/Digital_Design_src.png" height="300" width="650" class="img-responsive">
-					 		</a>
+					 			<div class="caption-text">
+  						  <span class="bottom">Graphic Design work samples</span>
+  							</div>		
+					 </a>
 			   </div>
 			   <div class="col-lg-4 col-md-4 col-sm-4 gallery" id="PortfolioImg">
 			   			<a href="img/under-construction-page.jpg">
 								<img src="img/AngularJS_src.png" class="img-responsive">
-					 		</a>
+					 			<div class="caption-text">
+  						  <span class="bottom">AngularJs App</span>
+  							</div>		
+					 </a>
 			   </div>
 		  </div><!--/row -->
-	</div><!--/container -->
+	</div><!--/#Portfolio container -->
 	
-	<div id="social">
+	<div container="container" id="social">
 		 	<div class="container-fluid text-centered">
 			 	 <ul>
 			 			<li><a href="https://www.github.com/"><i class="fa fa-github wow bounceInfa-2x wow bounceIn" data-wow-delay=".1s"></i>
@@ -184,9 +202,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-		  <!-- AniJS core library -->
-    <script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script> 
-
+		
 			<!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
@@ -195,10 +211,5 @@
 		<!-- Main DOM script -->
 		<script src="DOM.js/mainDOM.js"></script>
 
-  		<!-- Include to use $addClass, $toggleClass or $removeClass -->
-  	<script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
-
-  		<!-- The scrollreveal helper -->
-  <script src="http://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
   </body>
 </html>

@@ -33,31 +33,41 @@ h6 {
 
 .navbar-default .navbar-brand {
 	color: #399F5F;
-	text-shadow: 0 0 2px black;
+	text-shadow: 
 }
 
 .navbar-default {
 	background-color: transparent;
 	border-color: transparent;
-	text-shadow: 0 0 3px black;
+	text-shadow: 0 0 1.5px black;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+	color: #399F5F;
 }
 
 .navbar-default .navbar-nav> .active> a,
 .navbar-default .navbar-nav> .active> a:focus {
+	text-transform: uppercase;
 	color: #399F5F;
 	background-color: transparent;
 	text-decoration: underline;
 }
 
-.navbar-default .navbar-nav a:hover {
-	
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:hover {
+	color: #399F5F; 
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #399F5F;
 	text-decoration: underline;
 	background: none;
 }
 .navbar-default .navbar-nav> li> a {
 	color: #399F5F;
-	border-bottom-color: #399F5F;
-	
 }
 
 
@@ -106,9 +116,11 @@ hr {
 }
 
 #Aboutwrap {
+	text-align: center;
 	font-size: 110%;
 	font-weight: 300;
-	padding: 25px;
+	margin: 20, 10, 55, 10px;
+	padding: 25, 50, 45, 50px;
 	background-color: white;
 }
 
@@ -159,6 +171,20 @@ hr {
 	list-style: none;
 }
 
+#PortfolioImg {
+	
+  position: relative;
+
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+
+}
+
+img {
+  max-width: 100%;
+}
+
 /*  About Me list hover effects  */
 
 
@@ -190,7 +216,7 @@ hr {
 	padding-bottom: 50px;
 	background-color: #2f2f2f;
 	color: #f2f2f2;
-	margin-left: 10px;
+	margin: none;
 }
 
 .footerInfo p {
@@ -205,13 +231,3 @@ p.footerBrand {
 	color: 399F5F;
 }
 
- /*Gallery */
-
-.gallery {
-	margin-top: 30px;
-}
-
-.gallery img:hover {
-	opacity: 0.3;
-	color: #399F5F;
-}
